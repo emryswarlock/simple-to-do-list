@@ -3,6 +3,9 @@
 var input = document.getElementById("input");
 var button = document.getElementById("button");
 var ul = document.querySelector("ul");
+var listItem = document.getElementsByTagName("li");
+var item = document.querySelectorAll("li");
+
 
 function inputLength() {
     return input.value.length;
@@ -34,3 +37,9 @@ button.addEventListener("click", click);
 
 // if user press enter , it also will mak a new list item
 input.addEventListener("keypress",pressEnter);
+
+
+item.onclick = function(e){
+    e.target.classList.toggle("done");
+}
+
