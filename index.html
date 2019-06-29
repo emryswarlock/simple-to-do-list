@@ -9,15 +9,28 @@
         body{
             text-align: center;
         }
+
+        .done{
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body>
     <h1>To-Do : </h1>
     <input id="input" type="text"><button id="button">Enter</button>
     <ul style="text-align: center;">
-        <li>Eat</li>
-        <li>Sleep</li>
-        <li>Code</li>
+        <li>
+            <label>Eat</label>
+            <button class="checklist">✔</button><button class="delete">❌</button>
+        </li>
+        <li>
+            <label>Sleep</label>
+            <button class="checklist">✔</button><button class="delete">❌</button>
+        </li>
+        <li>
+            <label>Code</label>
+            <button class="checklist">✔</button><button class="delete">❌</button>
+        </li>
     </ul>
 
     <script src="js/script.js"></script>
